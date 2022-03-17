@@ -1,0 +1,7 @@
+{
+  "name": "hardworxApp02",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
