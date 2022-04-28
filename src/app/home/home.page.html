@@ -1,20 +1,56 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header> 
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="heading">
+      <div class="btn_flex" >
+        <div>
+          <ion-buttons slot="start">
+            <ion-menu-button mode="ios" color="dark"></ion-menu-button>
+            <ion-label>Hard<span>worx</span><br><p>Home</p></ion-label>
+          </ion-buttons>
+        </div>
+      </div>
+    </div>
+    
+  <ion-slides>
+          <ion-slide>
+            <div class="slide" >
+              <img src="../../assets/01_slider_pictures/slide-1.png" />
+              <h2>Willkommen bei Hardworx!</h2>
+              <p>
+                Hier finden Sie alles, was sie brauchen.
+              </p>
+            </div>
+            <div class="arrow ion-text-center">
+              <img src="../../assets/01_slider_pictures/arrow.png">
+            </div>
+          </ion-slide>
+          
+          <ion-slide>
+            <img src="../../assets/01_slider_pictures/slide-2.png" />
+            <h2>Hardware</h2>
+            <p>
+              Die beste und neueste Hardware für Ihr Unternehmen!
+            </p>
+          </ion-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+          <ion-slide>
+            <img src="../../assets/01_slider_pictures/slide-3.png" />
+            <h2>Software</h2>
+            <p>
+              Modernste Programme und stets auf Stand der Technik.
+            </p>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/01_slider_pictures/slide-4.png" />
+            <h2>Ready to shop?</h2>
+              <ion-button color="secondary" expand="block" mode="ios" size="medium" fill="outline" routerLink="/produktsql" expand="block">Produkte</ion-button>   
+          </ion-slide>
+        </ion-slides>
+        
+        
+
 </ion-content>
+

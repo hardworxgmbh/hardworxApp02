@@ -1,0 +1,39 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <div class="heading">
+    <div class="btn_flex" >
+      <div>
+        <ion-buttons slot="start">
+          <ion-menu-button mode="ios" color="dark"></ion-menu-button>
+          <ion-label>Hard<span>worx</span><br><p>Produkte</p></ion-label>
+        </ion-buttons>
+      </div>
+    </div>
+  </div>
+  <ion-slides>
+    
+    <ion-slide *ngFor="let product of products">
+      <ion-card>
+        <img src="https://hardworx.bbs-rohrbach.at/ionic2php/images_products/{{product.pic}}"/>
+        <ion-card-header>
+          <ion-card-subtitle>{{product.price}}</ion-card-subtitle>
+          <ion-card-title>{{product.title}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ul>
+          <li>{{product.desc}}</li>
+        </ul>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    
+
+  </ion-slides>
+</ion-content>
+
+
+
+

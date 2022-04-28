@@ -1,3 +1,71 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+<!--Side menu-->
+<ion-menu side="start" menuId="first" content-id="main-content">
+  <div class="menu-header-bg">
+    <div class="menu-content"><ion-label>Hard<span>worx</span><p>Menu</p></ion-label></div>
+  </div>
+      <ion-header>
+            
+      </ion-header>
+    
+  
+
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle>
+        <ion-item routerLink="/home">
+          <ion-icon name="home-outline" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    <ion-menu-toggle>
+      <ion-item routerLink="/unternehmen">
+        <ion-icon name="business-outline" slot="start"></ion-icon>
+        <ion-label>Unternehmen</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+    <ion-menu-toggle>
+      <ion-item routerLink="/produktsql">
+        <ion-icon name="card-outline" slot="start"></ion-icon>
+        <ion-label>Produkte</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+    <ion-menu-toggle>
+      <ion-item >
+        <ion-icon name="card-outline" slot="start"></ion-icon>
+        <ion-label>Shop</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+    <ion-menu-toggle>
+      <ion-item routerLink="/mitarbeiter">
+        <ion-icon name="people-outline" slot="start"></ion-icon>
+        <ion-label>Mitarbeiter</ion-label>
+      </ion-item>
+    </ion-menu-toggle> 
+    <ion-menu-toggle>
+      <ion-item routerLink="/kontakt">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label>Kontakt</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+    </ion-list>
+    
+  </ion-content>
+
+</ion-menu>
+
+
+
+<ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

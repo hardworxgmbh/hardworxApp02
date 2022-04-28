@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'unternehmen',
+    loadChildren: () => import('./pages/unternehmen/unternehmen.module').then( m => m.UnternehmenPageModule)
+  },
+  {
+    path: 'mitarbeiter',
+    loadChildren: () => import('./pages/mitarbeiter/mitarbeiter.module').then( m => m.MitarbeiterPageModule)
+  },
+  {
+    path: 'kontakt',
+    loadChildren: () => import('./pages/kontakt/kontakt.module').then( m => m.KontaktPageModule)
+  },
+  {
+    path: 'produkte',
+    loadChildren: () => import('./pages/produkte/produkte.module').then( m => m.ProduktePageModule)
+  },
+  {
+    path: 'produktsql',
+    loadChildren: () => import('./pages/produktsql/produktsql.module').then( m => m.ProduktsqlPageModule)
+  },
 ];
 
 @NgModule({
